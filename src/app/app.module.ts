@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { LengthPipe } from './pipes/length';
+import { ReversePipe } from './pipes/reverse';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LengthPipe
+    LengthPipe,
+    ReversePipe
   ],
   imports: [
     BrowserModule,
