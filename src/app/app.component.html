@@ -1,0 +1,35 @@
+<!--
+  <form #customerform=ngForm (ngSubmit)="addCustomer(data.value)">
+  <div>
+    <label>name</label>
+    <input type="text" name="name" ngModel>
+  </div>
+  <input type="submit" value="Submit">
+  submitted value is{{name}} 
+</form>
+-->
+{{string}}
+<br>
+Length of String is{{string|length}}
+<br>
+{{cust1.name}} {{cust1.address}}
+<br>
+<div *ngFor='let customer of customers;let i=index'>
+  {{i+1}}) {{customer.name}}  {{ customer.address}}
+</div>
+<form #customerform=ngForm (ngSubmit)="newCustomer(customerform)">
+ <div>
+  <label>customer name</label>
+  <input type='text' name='name' ngModel>
+ </div> 
+ <div>
+  <label>Customer address</label>
+  <input type='text' name='address' ngModel>
+ </div>
+  
+<input type='submit' name='Submit'>
+
+</form>
+<br>
+{{customer.name}} {{customer.address}}
+<br>
